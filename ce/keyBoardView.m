@@ -76,8 +76,6 @@
     
     // 3.添加字符后，移动光标到新的位置
     _keyTextField.text = contentString;
-//    UITextRange *selectedRange2 = [_keyTextField selectedTextRange];
-//    NSInteger offset2 = [_keyTextField offsetFromPosition:_keyTextField.beginningOfDocument toPosition:selectedRange2.end];
     UITextPosition *newPos = [_keyTextField positionFromPosition:_keyTextField.beginningOfDocument offset:offset + 1];
     _keyTextField.selectedTextRange = [_keyTextField textRangeFromPosition:newPos toPosition:newPos];
 }
