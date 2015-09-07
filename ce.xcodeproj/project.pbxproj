@@ -14,8 +14,8 @@
 		A3300CBF1B5783CC00A0E059 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3300CBE1B5783CC00A0E059 /* Images.xcassets */; };
 		A3300CC21B5783CC00A0E059 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3300CC01B5783CC00A0E059 /* LaunchScreen.xib */; };
 		A3300CCE1B5783CD00A0E059 /* ceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3300CCD1B5783CD00A0E059 /* ceTests.m */; };
-		A3300CD81B578C1900A0E059 /* keyBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3300CD71B578C1900A0E059 /* keyBoardView.xib */; };
-		A3300CDB1B578C7400A0E059 /* keyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3300CDA1B578C7400A0E059 /* keyBoardView.m */; };
+		A3F7F2C61B9D65B5000D3409 /* TKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F7F2C41B9D65B5000D3409 /* TKeyBoardView.m */; };
+		A3F7F2C71B9D65B5000D3409 /* TKeyBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3F7F2C51B9D65B5000D3409 /* TKeyBoardView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +42,9 @@
 		A3300CC71B5783CD00A0E059 /* ceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3300CCC1B5783CD00A0E059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3300CCD1B5783CD00A0E059 /* ceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ceTests.m; sourceTree = "<group>"; };
-		A3300CD71B578C1900A0E059 /* keyBoardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = keyBoardView.xib; sourceTree = "<group>"; };
-		A3300CD91B578C7400A0E059 /* keyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyBoardView.h; sourceTree = "<group>"; };
-		A3300CDA1B578C7400A0E059 /* keyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = keyBoardView.m; sourceTree = "<group>"; };
+		A3F7F2C31B9D65B5000D3409 /* TKeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKeyBoardView.h; sourceTree = "<group>"; };
+		A3F7F2C41B9D65B5000D3409 /* TKeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKeyBoardView.m; sourceTree = "<group>"; };
+		A3F7F2C51B9D65B5000D3409 /* TKeyBoardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKeyBoardView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +90,9 @@
 				A3300CB61B5783CC00A0E059 /* AppDelegate.m */,
 				A3300CB81B5783CC00A0E059 /* ViewController.h */,
 				A3300CB91B5783CC00A0E059 /* ViewController.m */,
-				A3300CD71B578C1900A0E059 /* keyBoardView.xib */,
-				A3300CD91B578C7400A0E059 /* keyBoardView.h */,
-				A3300CDA1B578C7400A0E059 /* keyBoardView.m */,
+				A3F7F2C31B9D65B5000D3409 /* TKeyBoardView.h */,
+				A3F7F2C41B9D65B5000D3409 /* TKeyBoardView.m */,
+				A3F7F2C51B9D65B5000D3409 /* TKeyBoardView.xib */,
 				A3300CBB1B5783CC00A0E059 /* Main.storyboard */,
 				A3300CBE1B5783CC00A0E059 /* Images.xcassets */,
 				A3300CC01B5783CC00A0E059 /* LaunchScreen.xib */,
@@ -208,8 +208,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3300CBD1B5783CC00A0E059 /* Main.storyboard in Resources */,
-				A3300CD81B578C1900A0E059 /* keyBoardView.xib in Resources */,
 				A3300CC21B5783CC00A0E059 /* LaunchScreen.xib in Resources */,
+				A3F7F2C71B9D65B5000D3409 /* TKeyBoardView.xib in Resources */,
 				A3300CBF1B5783CC00A0E059 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,8 +229,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3300CBA1B5783CC00A0E059 /* ViewController.m in Sources */,
-				A3300CDB1B578C7400A0E059 /* keyBoardView.m in Sources */,
 				A3300CB71B5783CC00A0E059 /* AppDelegate.m in Sources */,
+				A3F7F2C61B9D65B5000D3409 /* TKeyBoardView.m in Sources */,
 				A3300CB41B5783CC00A0E059 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

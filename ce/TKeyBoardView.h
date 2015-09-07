@@ -15,7 +15,7 @@
 
 @end
 
-@interface keyBoardView : UIView <UITextFieldDelegate>
+@interface TKeyBoardView : UIView <UITextFieldDelegate>
 
 // 如果外部无需处理选中数字事件，代理则无需实现！
 @property (weak, nonatomic) id<keyBoardViewDelegate> keyDelegate;

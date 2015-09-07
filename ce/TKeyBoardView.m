@@ -6,12 +6,12 @@
 //  Copyright (c) 2015年 GongXinYing. All rights reserved.
 //
 
-#import "keyBoardView.h"
+#import "TKeyBoardView.h"
 
-@implementation keyBoardView
+@implementation TKeyBoardView
 
 + (instancetype)kBoardView {
-    keyBoardView *boardView = [[[UINib nibWithNibName:@"keyBoardView" bundle:nil]instantiateWithOwner:self options:nil] objectAtIndex:0];
+    TKeyBoardView *boardView = [[[UINib nibWithNibName:@"TKeyBoardView" bundle:nil]instantiateWithOwner:self options:nil] objectAtIndex:0];
     return boardView;
 }
 

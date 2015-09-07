@@ -7,20 +7,20 @@
 //
 
 #import "ViewController.h"
-#import "keyBoardView.h"
+#import "TKeyBoardView.h"
 
 @interface ViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *textField_userNmae;
 @end
 
 @implementation ViewController {
-    keyBoardView *boardView;
+    TKeyBoardView *boardView;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    boardView = [keyBoardView kBoardView];
+    boardView = [TKeyBoardView kBoardView];
     boardView.keyTextField = _textField_userNmae;
 }
 
