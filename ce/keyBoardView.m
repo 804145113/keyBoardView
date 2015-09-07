@@ -15,10 +15,21 @@
     return boardView;
 }
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    _constraint_height.constant = 0.5f;
+}
+
 - (IBAction)selectNumber:(UIButton *)sender {
     NSString *str = nil;
     if (sender.tag - 300 == 10) {
-        str = @".";
+        if ([_keyTextField.text rangeOfString:@"."].length != 0) {
+            str = @"";
+            return;
+        }
+        else {
+            str = @".";
+        }
     } else if (sender.tag - 300 == 11)
     {
         str = @"";

@@ -23,6 +23,8 @@
 // 关联的编辑框
 @property (strong,nonatomic) UITextField *keyTextField;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraint_height;
+
 - (IBAction)selectNumber:(id)sender;
 
 + (instancetype)kBoardView;
