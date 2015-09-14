@@ -208,6 +208,7 @@
                 <constraint firstItem="Ek2-sn-qdq" firstAttribute="top" secondItem="UI9-wC-UeV" secondAttribute="bottom" id="9Fp-Dt-qsN"/>
                 <constraint firstItem="zyo-AC-IWs" firstAttribute="leading" secondItem="UI9-wC-UeV" secondAttribute="leading" id="ASt-el-tyA"/>
                 <constraint firstItem="GfB-NR-auN" firstAttribute="leading" secondItem="V02-8I-aLZ" secondAttribute="leading" id="FTW-QS-PLA"/>
+                <constraint firstItem="eob-6L-iXS" firstAttribute="height" secondItem="mzo-Od-qGA" secondAttribute="height" id="HeH-xv-cju"/>
                 <constraint firstAttribute="trailing" secondItem="UI9-wC-UeV" secondAttribute="trailing" id="JJZ-QB-8TC"/>
                 <constraint firstAttribute="trailing" secondItem="CmP-xX-ITs" secondAttribute="trailing" constant="28" id="KB4-zP-VcZ"/>
                 <constraint firstItem="kM4-XS-le0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KBo-O1-MfW"/>
@@ -219,13 +220,14 @@
                 <constraint firstItem="FO5-le-VxD" firstAttribute="leading" secondItem="MdA-Zy-JjS" secondAttribute="leading" id="SJw-Qn-Pd7"/>
                 <constraint firstItem="CmP-xX-ITs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VV3-h7-4QH"/>
                 <constraint firstItem="kM4-XS-le0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ViO-uB-2BX"/>
-                <constraint firstItem="GfB-NR-auN" firstAttribute="height" secondItem="mzo-Od-qGA" secondAttribute="height" id="Y7v-Af-2Z1"/>
+                <constraint firstAttribute="bottom" secondItem="mzo-Od-qGA" secondAttribute="bottom" id="YWP-gO-3q4"/>
                 <constraint firstItem="zyo-AC-IWs" firstAttribute="height" secondItem="UI9-wC-UeV" secondAttribute="height" id="YWT-BG-dli"/>
                 <constraint firstItem="FO5-le-VxD" firstAttribute="height" secondItem="MdA-Zy-JjS" secondAttribute="height" id="YaG-5h-pfU"/>
                 <constraint firstItem="GfB-NR-auN" firstAttribute="height" secondItem="V02-8I-aLZ" secondAttribute="height" id="b7v-BB-QYR"/>
                 <constraint firstItem="zyo-AC-IWs" firstAttribute="height" secondItem="Ek2-sn-qdq" secondAttribute="height" id="bCz-QU-c1T"/>
                 <constraint firstItem="GfB-NR-auN" firstAttribute="height" secondItem="ZSr-sW-NrB" secondAttribute="height" id="bMT-7n-WkW"/>
                 <constraint firstAttribute="trailing" secondItem="kM4-XS-le0" secondAttribute="trailing" id="bZn-Mz-XK0"/>
+                <constraint firstItem="Rkq-A2-Cx2" firstAttribute="height" secondItem="mzo-Od-qGA" secondAttribute="height" id="c3W-DT-S5f"/>
                 <constraint firstItem="zyo-AC-IWs" firstAttribute="trailing" secondItem="Rkq-A2-Cx2" secondAttribute="trailing" id="cPc-xA-jXp"/>
                 <constraint firstItem="GfB-NR-auN" firstAttribute="trailing" secondItem="ZSr-sW-NrB" secondAttribute="trailing" id="cd2-nQ-Uft"/>
                 <constraint firstItem="zyo-AC-IWs" firstAttribute="height" secondItem="Rkq-A2-Cx2" secondAttribute="height" id="dOq-5V-5in"/>
@@ -235,7 +237,6 @@
                 <constraint firstItem="GfB-NR-auN" firstAttribute="trailing" secondItem="mzo-Od-qGA" secondAttribute="trailing" id="fMp-wD-xij"/>
                 <constraint firstItem="UI9-wC-UeV" firstAttribute="width" secondItem="ZSr-sW-NrB" secondAttribute="width" multiplier="98:122" constant="2" id="h1P-il-0i2"/>
                 <constraint firstItem="GfB-NR-auN" firstAttribute="trailing" secondItem="V02-8I-aLZ" secondAttribute="trailing" id="iwA-e2-qrb"/>
-                <constraint firstItem="FO5-le-VxD" firstAttribute="height" secondItem="eob-6L-iXS" secondAttribute="height" id="kBr-uW-v6p"/>
                 <constraint firstItem="GfB-NR-auN" firstAttribute="leading" secondItem="ZSr-sW-NrB" secondAttribute="leading" id="khK-a4-7mb"/>
                 <constraint firstItem="Rkq-A2-Cx2" firstAttribute="top" secondItem="zyo-AC-IWs" secondAttribute="bottom" id="lDu-z8-Ude"/>
                 <constraint firstItem="GfB-NR-auN" firstAttribute="top" secondItem="V02-8I-aLZ" secondAttribute="bottom" id="lg9-Ie-gjp"/>
@@ -256,6 +257,11 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="dOq-5V-5in"/>
+                </mask>
+            </variation>
             <connections>
                 <outlet property="constraint_height" destination="Ezv-kP-Olh" id="Ex7-mr-tnG"/>
             </connections>
