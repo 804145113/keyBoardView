@@ -15,7 +15,7 @@
 }
 ```
 ## Screenshot ##
-![](http://i3.tietuku.com/5730d92502492308.gif)
+![](http://p1.bpimg.com/1949/e0dd825fbbc13ec3.png)
 ##Remarks##
  - 1 更新高仿QQ红包输入自定义键盘。
  - 2 0-9的数字，以及小数点和取消，都采用按钮，利用自动布局实现适配iPhone各机型。
