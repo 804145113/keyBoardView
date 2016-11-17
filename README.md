@@ -14,12 +14,14 @@
     boardView.keyTextField = _textField_userNmae;
 }
 ```
-## Screenshot ##
-![](http://p1.bpimg.com/1949/e0dd825fbbc13ec3.png)
+## iPhone 运行截图 ##
+![](https://s11.postimg.org/w0t5kmimr/IMG_2080.png)
+
+## iPad 运行截图
+![](https://s16.postimg.org/t4vztl7z9/img_0053.png)
 ##Remarks##
  - 1 更新高仿QQ红包输入自定义键盘。
- - 2 0-9的数字，以及小数点和取消，都采用按钮，利用自动布局实现适配iPhone各机型。
- - 3 只需要几句代码即可调用，无需繁琐代码。
+ - 2 0-9的数字，以及小数点和取消，都采用按钮，利用自动布局实现适配iPhone各机型，经测算iPad正常显示，完美适配iPhone、iPad。
+ - 3 代码调用简单，只需关联TKBoardView中的TextField对象到指定的编辑框。
  - 4 可以设置代理，监听数字点击事件，但一般不需要，只需关联keyboard的textFeild即可。
  - 5 适用于iOS 7.1+
- - 6 sketch PDF源文件在项目工程里面！你可以自己编辑她。（已经不采用这种方式实现）
