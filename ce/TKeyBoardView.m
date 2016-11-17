@@ -21,6 +21,7 @@
 }
 
 - (IBAction)selectNumber:(UIButton *)sender {
+
     NSString *str = nil;
     if (sender.tag - 300 == 10) {
         if ([_keyTextField.text rangeOfString:@"."].length != 0) {
@@ -36,17 +37,19 @@
         [self deleteOneStringToTextField];
     }
     else {
+        // 判断两位小数
+        NSString *content = _keyTextField.text;
+        NSArray *arrays = [content componentsSeparatedByString:@"."];
+        NSInteger aConut = arrays.count;
+        if (aConut != 0 && aConut == 2) {
+            NSString *secondStr = [arrays objectAtIndex:1];
+            if (secondStr.length >= 2) {
+                return;
+            }
+        }
         str = [NSString stringWithFormat:@"%ld",sender.tag - 300];
     }
-    if (_keyDelegate != nil) {
-        // 交给代理处理
-        [_keyDelegate selectNumber:str];
-        [self appendContentToTextField:str];
-    }
-    else {
-        // 自己处理
-        [self appendContentToTextField:str];
-    }
+    [self appendContentToTextField:str];
 }
 
 /**
@@ -89,6 +92,11 @@
     _keyTextField.text = contentString;
     UITextPosition *newPos = [_keyTextField positionFromPosition:_keyTextField.beginningOfDocument offset:offset + 1];
     _keyTextField.selectedTextRange = [_keyTextField textRangeFromPosition:newPos toPosition:newPos];
+
+    if (_keyDelegate != nil) {
+        // 交给代理处理
+        [_keyDelegate selectNumber:_keyTextField.text];
+    }
 }
 
 - (void)setKeyTextField:(UITextField *)keyTextField {
